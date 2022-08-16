@@ -1,0 +1,127 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 1% 10%;
+}
+
+.title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.form {
+    margin: 2% 0;
+}
+
+.form input {
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 4px;
+    display: inline;
+    font-size: 100%; 
+    outline: 0;
+    padding: 0.8%;
+    width: 88%;    
+}
+
+.form input:focus{
+    border-color: black;
+}
+
+.form button {
+    border: 0;
+    background-color: navy;
+    border-radius:4px;
+    color: white;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    font-size: 100%;    
+    outline: 0;
+    padding: 0.85%;
+    width: 8.8%;
+}
+
+.form button:hover {
+    background-color: blue;
+    transition: all 0.5s;
+}  
+
+.table {
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 100%;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(100, 150, 250, 0.300);
+}
+
+.table th {
+    border-bottom: 1px solid black;
+    height: 40px;
+}     
+
+.table td {
+    height: 40px;
+}
+
+#th-id, #td-id {
+    text-align: center;
+    width: 30px;
+}
+
+#th-tarefas, #td-tarefas {
+    max-width: 1px;
+    overflow: auto;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+
+#th-deletar, #td-deletar {
+    text-align: center;
+    width: 9%;    
+}
+
+#td-deletar a {
+    color: red;
+    text-decoration: none;
+}
+
+#td-tarefas::-webkit-scrollbar   {
+    height: 5px;
+}
+
+#td-tarefas::-webkit-scrollbar-track-piece {
+    background-color: rgba(128, 128, 128, 0.128);
+    border-radius: 10px;
+}
+
+#td-tarefas::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.256);
+    border-radius: 10px;
+}
+
+
+@media(max-width: 900px) {
+
+    .form input {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        width: 98%;
+    }
+
+    .form button {
+        display: block;
+        font-size: 20px;
+        margin: 2% auto 5% auto;
+        width: 100%;
+    }
+}
+
