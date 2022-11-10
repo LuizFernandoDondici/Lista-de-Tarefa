@@ -73,7 +73,7 @@ ob_clean();
 
             <h1 class="title"> Lista de Tarefas </h1>
             <form action="/criar-tarefa" method="POST" class="form">
-                <input type="text" name="tarefa" placeholder="Digite sua tarefa aqui">
+                <input type="text" name="tarefa" id="input-tarefa" placeholder="Digite sua tarefa aqui">
                 <button type="submit"> Salvar </button>
             </form>
 
@@ -107,5 +107,8 @@ ob_clean();
 
         </section>
     </main>
+    
+    <script src="./script/script.js"></script>
+
 </body>
 </html>
